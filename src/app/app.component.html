@@ -9,7 +9,7 @@
 
     @for (
         course of courses;
-        track course.id;
+        track trackCourse;
         let index = $index;
         let count = $count;
         let first = $first;
@@ -30,7 +30,7 @@
     }
     @empty {
 
-    <h1>No courses found!</h1>
+        <h1>No courses found!</h1>
 
     }
 
