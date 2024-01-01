@@ -37,4 +37,10 @@ export class CourseCardComponent {
       return ['beginner']
     }
   }
+
+  cardStyles() {
+    return {
+      'text-decoration': 'underline'
+    };
+  }
 }
