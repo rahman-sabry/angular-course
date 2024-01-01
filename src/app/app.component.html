@@ -4,11 +4,17 @@
 
 </div>
 
+<div class="demo">
+
+    <div>Percentage: {{rate | percent}}</div>
+
+</div>
+
 
 <div class="courses">
 
     @for (
-        course of courses;
+        course of courses | slice:0:2;
         track trackCourse;
         let index = $index;
         let count = $count;
